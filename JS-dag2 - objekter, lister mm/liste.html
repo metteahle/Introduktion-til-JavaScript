@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Liste</title>
+</head>
+<body>
+
+<!--Rejsedestinationer-->
+  <h1>Ønske Rejsedestinationer</h1>
+  <section>
+    <ul id="rejse"></ul>
+  </section>
+
+<!--huskeseddel-->
+  <h1>Huskeseddel</h1>
+  <section>
+    <ul id="husk"></ul>
+  </section>
+
+<!--Section til dato-->
+  <section>
+    <div id="idag"></div>
+  </section>
+
+<!--Rejsedestinationer script-->
+  <script>
+    let visMig, destinationer = [
+      'Kina',
+      'New York',
+      'Los Angeles',
+      'Maldiverne',
+      'Barbados',
+      'Oberstdorf',
+      'Hamburg',
+      'Barcalona',
+      'Dubai'
+    ]
+
+    destinationer.sort();
+
+    for (visMig in destinationer){
+      //console.log(huskeseddel[visMig]);
+    rejse.innerHTML += '<li>' + destinationer[ visMig ] + '</li>';
+    }
+  </script>
+
+<!--huskeseddel script-->
+  <script>
+    let visMig2, huskeseddel = [
+      'Mælk',
+      'Øl',
+      'Gær',
+      'Mel',
+      'Smør',
+      'Snolder',
+      'Hugo, Victor: "Klokkeren fra Notradame"',
+      'Joyce, James: "Dublin Stories"',
+      'James, W.B.:"The Wild Swans at Coole"'
+    ]
+
+    huskeseddel.sort();
+
+    for (visMig2 in huskeseddel){
+      //console.log(huskeseddel[visMig]);
+    husk.innerHTML += '<li>' + huskeseddel[ visMig2 ] + '</li>';
+    }
+
+
+    //dato-objekt
+    const d = new Date();
+
+    const uge = [
+      'Søndag',
+      'Mandag',
+      'Tirsdag',
+      'Onsdag',
+      'Torsdag',
+      'Fredag',
+      'Lørdag',
+    ]
+    //skriver til <div id="idag">
+    idag.innerHTML = uge[ d.getDay() ];
+
+
+
+  </script>
+
+
+
+
+
+</body>
+</html>

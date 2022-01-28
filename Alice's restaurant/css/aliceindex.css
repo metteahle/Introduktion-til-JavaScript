@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/*font-family: 'Manbow'
+  font-family: 'Oswald'
+  font-family: 'Losta Masta'
+
+*/
+
+:root {
+  /* farver */
+  --pink: #db68a4;
+  --lightpink: #cd85a6;   /* */
+  --lightgreypink: #bc9aa1; /* */
+  --greygreen: #a8a994; /* */
+  --lightgreen: #90b480;/* */
+  --green: #70b967;
+  --black: #000000;
+
+  /* fonte */
+  --heading:'Racing Sans One', cursive;
+  --text: 'Arial Narrow';
+}
+
+
+  html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: Oswald;
+    font-weight: 200;
+  }
+
+h1{
+  font-family: Losta Masta;
+}
+
+h2{
+  font-family: Losta Masta;
+  font-weight: lighter;
+}
+
+/*Navbar start*/
+  /*links styling/ menubaroverskrifter*/
+.nav a:link{
+  font-size: 20px;
+  text-decoration: none;
+}
+
+a:visited{
+  color: var(--black);
+}
+
+a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--pink);
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--lightpink);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+a:hover::before {
+  transform: scaleX(1);
+}
+
+.menu{
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20%;
+}
+/*Navbar slut*/
+
+
+.headername{
+  margin-left: 40px;
+}
+
+.menuoftheday{
+  margin-left: 40px;
+}
+
+.subheadname{
+  margin-left: 40px;
+}
+
+#workers{
+  list-style-type: none;
+}
+
+
+
+
+.footsegment{
+  text-align: center;
+}

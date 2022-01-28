@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript objects</title>
+</head>
+<body>
+
+  <h1>Hotellet</h1>
+
+    <section>
+      <h2>Ledige rum</h2>
+      <div id="ledige"></div>
+    </section>
+
+  <!--Objektet omsat til javascript-->
+    <script>
+      let hotel = {
+        name: 'Marselis',
+        rooms: 56,
+        booked: 34,
+        ledigeRum: function(){
+          return this.rooms - this.booked; //bookede rum trækkes fra ledige rum, for at finde ud af hvor mange ledige der er
+        }
+      }
+
+      //document.getElementById('ledige').innerHTML = hotel.ledigeRum();
+      ledige.innerHTML = hotel.ledigeRum(); // dette betyder det samme som ovenstående getElementById, men kan kun gøre ved en ID
+
+    </script>
+
+</body>
+</html>

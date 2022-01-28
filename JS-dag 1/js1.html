@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<style>
+  .blue {
+    background-color: blue;
+  }
+</style>
+
+<body>
+
+    <h1>JavaScript Begynder</h1>
+    <div id="resultat"></div>
+
+    <script>
+      /*Prøver innerHTML
+      ver. 2.19 jan 2022*/
+
+    //Jeg er en kommentar
+      document.getElementById('resultat').innerHTML = "<h2>Dante: Inferno</h2>";
+
+      //man kan gemme lange linjer i en variabel
+      let res = document.getElementById('resultat');
+      res.innerHTML +="<h2>Blake: Songs of Innocence</h2>";
+
+      //Her bruges JavaScript til at lege med farver -  altså CSS
+      res.style.color = "red";
+      res.style.fontFamily = "sans-serif";
+
+      //hvordan sætter man et billede ind?
+      res.innerHTML += '<img src="images/hund.png" alt="Dog">';
+
+      //Hvad hvis der skal være flere linjer? (backtick = ``tegn altså tryk shift og tegnet til venstre for slet knap)
+      let kode = `
+        <aside class="blue">
+          <h1>Cavapoo</h1>
+          <img src="images/hund.png" alt="Dog">
+          <figcaption>Hulu lulu</figcaption>
+        </aside>
+      `;
+
+    //nedenstående er en måde at gentage, dog er loop lidt smartere
+      //res.innerHTML += kode;
+      //res.innerHTML += kode;
+      res.innerHTML += kode;
+
+      //loop: noget der gentages et antal gange - dette er et forloop
+      //Først difineres variablen
+      //++ betyder i = i + 1
+      for (let i = 0; i <10; i++) {
+        res.innerHTML += kode;
+        res.innerHTML += "hund" +i;
+      }
+
+    </script>
+
+  <!--anbefaler at script kommer til sidst, nedenstående viser hvordan man linker til den eksterne js fil.
+  kan være afhængig af noget af det script man har skrevet øverst, derfor skrives det nederst-->
+    <script src="js/js1.js"></script>
+
+</body>
+</html>

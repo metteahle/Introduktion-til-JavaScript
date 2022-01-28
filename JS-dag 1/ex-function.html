@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <button type="button" onclick="abe(111,444)">Klik her!</button> <!--funktionen kaldes når man klikker på en knap-->
+
+  <button
+      type="button"
+      onclick="visBillede()">
+        Klik her for billede af en sød hundehvalp!</button>
+
+    <button
+      type="button"
+      onclick="sletBillede()">
+      Slet den!</button>
+
+  <div id="billedeHer"></div>  <!--bestemmer hvor i HTML billedet skal komme ind. Hvis jeg f.eks. hville have haft billedet længere nede, så kunne jeg lave en ny div længere nede og give den en id som mit js kalder-->
+
+  <ul id="resultat"></ul>
+  <script>
+    /*
+    function abe(){ //definerer en funktion
+      return 22 + 23
+    }*/
+
+    console.log('Alert level green, Starrship up and running.'); //tjekke om dette står under console i undersøg - tjekke om det virker
+
+    let tekst = document.getElementById('resultat');
+    function abe( tal1, tal2 ) { //definerer funktionen
+
+      console.log('svar fra funktionen abe'); //Man kan tjekke om koden virker med console.log, inde i undersøg og under console. Det virker hvis teksten ses under console
+
+    // læg sammen
+     let plusser = tal1 + tal2;
+     tekst.innerHTML += '<li> Plus = ' +  plusser + '</li>';
+
+     // dividere
+     let dividerer = tal1 / tal2;
+     tekst.innerHTML += '<li> Divideret = ' +  dividerer + '</li>';
+
+     // minus
+     let minus = tal1 - tal2;
+     tekst.innerHTML += '<li> Minus = ' +  minus + '</li>';
+
+     // gange
+     let gange = tal1 * tal2;
+     tekst.innerHTML += '<li> Gange = ' +  gange + '</li>';
+    }
+
+    //abe(123,456); //udfører funktionen
+
+    //knap med billede
+    function visBillede(){
+      let kode = `
+        <aside class="blue">
+          <h1>Cavapoo</h1>
+          <img src="images/hund.png" alt="Dog">
+          <figcaption>Hulu lulu</figcaption>
+        </aside>
+      `;
+
+      document.getElementById('billedeHer').innerHTML = kode;
+    }
+
+
+    // og en funktion der sletter et billede
+    function sletBillede() {
+    console.log('sletter billedet')
+    document.getElementById('billedeHer').innerHTML = '';
+    }
+
+
+//Dette er en anden måde at gøre det på
+  /*function dividere(tal1, tal2) { //definerer en funktion
+   document.getElementById("resultat").innerHTML += "Tal 1 / Tal 2 = " + tal1 / tal2;}
+    dividere(30,6); //udfører funktion*/
+
+    /*document.getElementById("resultat").innerHTML = abe(222,2);
+      abe(); //afvikler/ udfører en funktion*/
+
+  </script>
+
+</body>
+</html>

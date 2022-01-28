@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Biograf</title>
+</head>
+<body>
+
+  <h1>Biograf</h1>
+
+    <section>
+      <h2>Optagede sæder</h2>
+      <div id="optaget"></div>
+    </section>
+
+    <section>
+      <h2>Ledige sæder</h2>
+      <div id="ledige"></div>
+    </section>
+
+    <button type="button" onclick="alert('Tillykke vi glæder og til at se dig i biografen')">Klik her</button>
+
+  <!--Objektet omsat til javascript-->
+    <script>
+      let biograf = {
+        name: 'Cinemaxx',
+        ledige: 60,
+        optaget: 300,
+        optagedeSeats: function(){
+          return this.optaget + 1;
+      }
+    }
+      document.getElementById('optaget').innerHTML = biograf.optagedeSeats();
+
+    </script>
+
+    <!--Objektet omsat til javascript-->
+      <script>
+        let ledige = {
+          name: 'Cinemaxx',
+          ledige: 60,
+          optaget: 300,
+          ledigeSeats: function(){
+            return this.ledige +0;
+        }
+      }
+        document.getElementById('ledige').innerHTML = ledige.ledigeSeats();
+
+      </script>
+
+</body>
+</html>

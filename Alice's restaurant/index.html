@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Alices Restaurant</title>
+
+  <link rel="stylesheet" href="css/aliceindex.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png"/>
+</head>
+<body>
+
+<header>
+   <a href="index.html">
+     <img class="logo" src="x" alt="x">
+   </a>
+
+ <!--Navbar-->
+<div class="nav">
+  <div class="menu">
+      <a href="#">Menukort</a>
+      <a href="#">Selskaber</a>
+      <a href="#">Book bord</a>
+      <a href="#">Kontakt</a>
+  </div>
+</div>
+</header>
+
+<img src="#" alt="#">  <!--En form for baggrundsbillede her-->
+
+
+  <h1 class="headername">Alices Restaurant</h1>
+
+<!--Knap der folder menukort ud-->
+<div class="menuoftheday">
+  <button
+      type="button"
+      onclick="showImage()">
+        Dagens menu</button>
+  <button
+      type="button"
+      onclick="removeImage()">
+      Fjern menu</button>
+
+  <div id="imageMenuOfTheDay"></div>
+</div>
+
+<!--Dagens citat - random-->
+  <div id="quoteOfTheDay"></div>
+
+  <!--Personaleliste-->
+    <h2 class="subheadname">Personaleliste</h2>
+    <section>
+      <ul id="workers"></ul>
+    </section>
+
+
+<footer>
+  <div class="footsegment">
+    <ul class="contactInfo" id="adress"></ul>
+
+    <section>
+      <div id="whichday"></div>
+      <div id="whichmonth"></div>
+      <div id="whichyear"></div>
+      <div id="whattime"></div>
+    </section>
+
+    <p>&copy; Mette Ahle Lahrmann Hansen</p>
+
+  </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>
