@@ -39,8 +39,24 @@ h2{
   font-weight: lighter;
 }
 
+
+.logo{
+  width: 120px;
+  margin-left: 2%;
+  margin-top: 1%;
+}
 /*Navbar start*/
   /*links styling/ menubaroverskrifter*/
+
+.nav{
+  margin-top: -5%;
+}
+
+.navbarcolor{
+  background-color: var(--lightpink);
+  padding-bottom: 3%;
+}
+
 .nav a:link{
   font-size: 20px;
   text-decoration: none;
@@ -68,7 +84,7 @@ a::before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--lightpink);
+  background-color: var(--lightgreypink);
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -84,6 +100,10 @@ a:hover::before {
 }
 /*Navbar slut*/
 
+.backgroundimageindex{
+  width: 100%;
+  height: 90%;
+}
 
 .headername{
   margin-left: 40px;
@@ -106,4 +126,5 @@ a:hover::before {
 
 .footsegment{
   text-align: center;
+  background-color: var(--green);
 }

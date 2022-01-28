@@ -4,7 +4,7 @@
     let kode = `
       <aside class="menuimage">
         <h1>Dagens Menu</h1>
-        <img src="#" alt="#">
+        <img src="images/menukort.png" alt="menu">
         <figcaption>Her ser du dagens menu</figcaption>
       </aside>
     `;
@@ -30,7 +30,7 @@
   //et tilfældigt tal
     function tilfaeldig(){
       return qoute [
-        Math.floor((Math.random() *5))
+        Math.floor(Math.random() * quote.length)
       ];
     }
 
@@ -64,7 +64,7 @@ let contact = {
   adress: 'Volden 32, 8000 Århus',
   phonenumber: 25423670,
   contactInfo: function(){
-    return this.name + this.adress + this.phonenumber;
+    return this.name +" "+ this.adress +" "+ this.phonenumber;
       }
     }
   adress.innerHTML = contact.contactInfo();
@@ -123,4 +123,4 @@ const now = new Date()
       if(hour > 17) {greeting = 'God aften!'}
       console.log(greeting)
       //Men hvordan får jeg tiden ind på siden så den vises?
-      document.getElementById("whattime").innerHTML = d.getHours();
+      document.getElementById("whattime").innerHTML = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
