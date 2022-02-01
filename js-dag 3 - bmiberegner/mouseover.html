@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mouse Over</title>
+
+<style>
+  #hej {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+  }
+</style>
+
+  </head>
+  <body>
+
+    <div id="hej"></div>
+    <div id="besked"></div>
+
+
+  <script>
+    hej.addEventListener('mouseover', function(){ //Musen er over
+	    besked.innerHTML = '<img src="images/happy.png">';
+      hej.style.backgroundColor = 'pink';
+    })
+
+    hej.addEventListener('click', function(){ //når man klikker
+	    besked.innerHTML = '<img src="images/sad.png">';
+      hej.style.backgroundColor = 'orange';
+    })
+
+    hej.addEventListener('mouseout', function(){ //Musen er et andet sted
+	    besked.innerHTML = '<img src="images/kiss.png">';
+      hej.style.backgroundColor = 'gold';
+    })
+
+    hej.addEventListener('mousedown', function(){ //når du holder musen nede
+      besked.innerHTML = '<img src="images/suprised.png">';
+      hej.style.transform = 'rotate(45deg)';
+    })
+
+    hej.addEventListener('mouseup', function(){
+      besked.innerHTML = '<img src="images/funny.png">';
+      hej.style.transform = 'rotate(90deg)';
+    })
+  </script>
+
+  </body>
+</html>

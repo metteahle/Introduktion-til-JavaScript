@@ -15,6 +15,7 @@
   --lightgreen: #90b480;/* */
   --green: #70b967;
   --black: #000000;
+  --white: #ffffff;
 
   /* fonte */
   --heading:'Racing Sans One', cursive;
@@ -39,70 +40,60 @@ h2{
   font-weight: lighter;
 }
 
-
 .logo{
   width: 120px;
-  margin-left: 2%;
+  margin-left: 40%;
   margin-top: 1%;
 }
+
+
 /*Navbar start*/
-  /*links styling/ menubaroverskrifter*/
-
-.nav{
-  margin-top: -5%;
+  /*Dropdown/ menubar*/
+.dropbtn{
+  width: 60px;
 }
 
-.navbarcolor{
-  background-color: var(--lightpink);
-  padding-bottom: 3%;
+.dropdown-content {
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 100%;
+  text-align: center;
 }
 
-.nav a:link{
-  font-size: 20px;
+.dropdown-content a {
+  color: black;
+  padding: 16px;
   text-decoration: none;
-}
-
-a:visited{
-  color: var(--black);
-}
-
-a {
-  position: relative;
-  color: #000;
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--pink);
-}
-
-a::before {
-  content: "";
-  position: absolute;
   display: block;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--lightgreypink);
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
+  font-size: 20px;
 }
 
-a:hover::before {
-  transform: scaleX(1);
+
+#booktable{
+  background-color: var(--green);
+  border-radius: 50%;
 }
 
-.menu{
-  display: flex;
-  justify-content: space-around;
-  margin-left: 20%;
-}
+.show {display:block;}
+
 /*Navbar slut*/
+
+
 
 .backgroundimageindex{
   width: 100%;
-  height: 90%;
+}
+
+.backgroundimagetext{
+  font-size: 20px;
+  margin-left: 10px;
+  position: absolute;
+  margin-top: -40px;
+  color: var(--white);
+}
+
+.wrapcenter{
+  text-align: center;
 }
 
 .headername{
@@ -111,6 +102,17 @@ a:hover::before {
 
 .menuoftheday{
   margin-left: 40px;
+}
+
+.menuofthedaybutton{
+  background-color: var(--lightgreen);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
 }
 
 .subheadname{
@@ -123,8 +125,137 @@ a:hover::before {
 
 
 
-
+/*FOOTER*/
 .footsegment{
   text-align: center;
   background-color: var(--green);
+}
+
+
+
+/*Mediarules*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+.dropdown{
+  margin-top: -80px;
+}
+
+.dropdown-content{
+  margin-top: 20px;
+  position: absolute;
+}
+
+.backgroundimageindex{
+  margin-top: 5%;
+}
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+.dropdown{
+  margin-top: -80px;
+}
+
+.backgroundimageindex{
+  margin-top: 5%;
+}
+
+.dropdown-content{
+  margin-top: 20px;
+}
+
+.backgroundimagetext{
+  font-size: 30px;
+  margin-top: -70px;
+}
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+.dropdown-content{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: white;
+  margin-left: 65px;
+  margin-top: -20px;
+}
+
+.dropbtn{
+  display: none;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.dropdown-content a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--green);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.dropdown-content a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.logo{
+  margin-left: 10px;
+}
+
+.backgroundimageindex{
+  margin-top: 2%;
+}
+
+.backgroundimagetext{
+  font-size: 40px;
+  margin-top: -90px;
+}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+.backgroundimagetext{
+  font-size: 50px;
+  margin-top: -110px;
+}
+
+.dropdown-content a {
+  font-size: 25px;
+}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+.backgroundimagetext{
+  font-size: 70px;
+  margin-top: -150px;
+}
+
 }

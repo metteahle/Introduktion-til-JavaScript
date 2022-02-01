@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BMI beregner</title>
+
+  <style>
+    #resultat{
+      background-color: lightblue;
+      font-size: 50px;
+    }
+  </style>
+
+</head>
+<body>
+
+<div id="resultat"></div>
+
+<script>
+  function bmiCalc( height, weight ) {
+    console.log( weight / (height/100 * height/100));
+
+  resultat.innerHTML += '<p>' + 'navn' + ' Din BMI er = ' + Math.round( weight / (height/100 * height/100));
+  }
+
+  bmiCalc(180,60);
+
+  //funktioner er objekter og objekter kan genrbuges --> eksempel nedenunder
+  let x = new bmiCalc(165,70);
+
+</script>
+
+
+
+</body>
+</html>

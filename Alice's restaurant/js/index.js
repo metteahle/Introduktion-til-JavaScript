@@ -1,3 +1,14 @@
+//menubar
+  // Get the button, and when the user clicks on it, execute myFunction
+  document.getElementById("burger").onclick = function() {myFunction()};
+
+  /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+
+
 //Vis of fjern menukort knapper!
   //knap med billede
   function showImage(){
@@ -36,6 +47,7 @@
 
     quoteOfTheDay.innerHTML = quote;
 
+
 //Personaleliste
 let namelist, workerslist = [
   'Martin Lundgreen - Kok',
@@ -43,7 +55,7 @@ let namelist, workerslist = [
   'Anna Greve Lauridsen - Tjener',
   'Erik Eriksen - Opvasker',
   'Preben Ludvigsen - Kok',
-  'Bente Lahrmann - Ejer',
+  'Alice Jensen - Ejer',
   'Henrik Larsen - Opvasker',
   'Ulla Killerich Mortensen - Tjener',
   'Ivar Nikolajsen - Tjener'
@@ -64,7 +76,7 @@ let contact = {
   adress: 'Volden 32, 8000 Århus',
   phonenumber: 25423670,
   contactInfo: function(){
-    return this.name +" "+ this.adress +" "+ this.phonenumber;
+    return this.name +" "+ this.adress +" - "+ this.phonenumber;
       }
     }
   adress.innerHTML = contact.contactInfo();

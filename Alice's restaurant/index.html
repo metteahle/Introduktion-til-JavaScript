@@ -11,34 +11,38 @@
 </head>
 <body>
 
-<header class="navbarcolor">
+<header>
+
   <a href="index.html">
     <img class="logo" src="images/logo.png" alt="logo">
   </a>
 
- <!--Navbar-->
-<div class="nav">
-  <div class="menu">
-      <a href="#">Menukort</a>
-      <a href="#">Selskaber</a>
-      <a href="#">Book bord</a>
-      <a href="#">Kontakt</a>
-  </div>
-</div>
+   <!--Navbar-->
+   <div class="dropdown">
+     <img src="images/burger.png" alt="burger" id="burger" class="dropbtn">
+     <div id="myDropdown" class="dropdown-content">
+       <a href="#">Menukort</a>
+       <a href="#">Selskaber</a>
+       <a href="#">Om os</a>
+       <a href="#">Kontakt</a>
+       <a id="booktable" href="#">Book Bord</a>
+     </div>
+   </div>
 </header>
 
-<img class="backgroundimageindex" src="images/baggrund.png" alt="food">  <!--En form for baggrundsbillede her-->
+<img class="backgroundimageindex" src="images/veggies.png" alt="food">
+<h2 class="backgroundimagetext">Vi bruger lokale og friske råvarer</h2>
 
-
+<section class="wrapcenter"> <!--wrap indhold start-->
   <h1 class="headername">Alices Restaurant</h1>
 
 <!--Knap der folder menukort ud-->
 <div class="menuoftheday">
-  <button
+  <button class="menuofthedaybutton"
       type="button"
       onclick="showImage()">
         Dagens menu</button>
-  <button
+  <button class="menuofthedaybutton"
       type="button"
       onclick="removeImage()">
       Fjern menu</button>
@@ -55,6 +59,8 @@
       <ul id="workers"></ul>
     </section>
 
+</section> <!--wrap indhold slut - bruges så det hele kan stå i midten-->
+
 
 <footer>
   <div class="footsegment">
@@ -68,14 +74,8 @@
     </section>
 
     <p>&copy; Mette Ahle Lahrmann Hansen</p>
-
   </div>
-
 </footer>
-
-
-
-
 
 
 

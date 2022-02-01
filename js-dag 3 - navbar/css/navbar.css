@@ -1,0 +1,76 @@
+*{
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+  font-family: helvetica;
+  list-style-type: none;
+}
+
+/*#burger{
+  width:40px;
+}*/
+
+/*Dropdown/ menubar*/
+.dropbtn{
+  width: 60px;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  text-align: center;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+
+.show {display:block;}
+
+
+
+/*Mediarules*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+.dropdown-content{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.dropbtn{
+  display: none;
+}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
