@@ -11,10 +11,10 @@
 </head>
 <body>
 
-<header>
+<header class="headwidth">
 
   <a href="index.html">
-    <img class="logo" src="images/logo.png" alt="logo">
+    <img id="logomouseevent" class="logo" src="images/logo.png" alt="logo">
   </a>
 
    <!--Navbar-->
@@ -41,22 +41,67 @@
   <button class="menuofthedaybutton"
       type="button"
       onclick="showImage()">
-        Dagens menu</button>
+        Se vores drinks</button>
   <button class="menuofthedaybutton"
       type="button"
       onclick="removeImage()">
-      Fjern menu</button>
+      Fjern drinks</button>
 
   <div id="imageMenuOfTheDay"></div>
 </div>
 
+  <br>
+  <br>
+  <br>
 <!--Dagens citat - random-->
   <div id="quoteOfTheDay"></div>
+
+  <br>
+  <br>
+  <br>
+
+<section class="articles">
+  <div class="articlessection">
+    <img src="images/meat.png" alt="meat">
+      <div class="sectionbackground1">
+        <div>
+          <h2>Lokale friske råvarer</h2>
+          <p>Hos Alice bruger vi lokale friske råvarer, vi går ind for økologi og SU venlige priser.</p>
+          <a href="#">Læs mere</a>
+        </div>
+      </div>
+  </div>
+
+  <div class="articlessection flex-container">
+    <div class="sectionbackground2">
+      <div class="flex-item">
+        <h2>Vores lækre salater</h2>
+        <p>Hos Alice bruger vi lokale friske råvarer, vi går ind for økologi og SU venlige priser.</p>
+        <a href="#">Læs mere</a>
+      </div>
+    </div>
+    <img class="flex-item" src="images/salat.png" alt="salat">
+  </div>
+
+    <div class="articlessection">
+      <img src="images/greenwall.png" alt="greenwall">
+        <div class="sectionbackground3">
+          <div>
+            <h2>Besøg vores restaurent</h2>
+            <p>Hos Alice bruger vi lokale friske råvarer, vi går ind for økologi og SU venlige priser.</p>
+            <a href="#">Læs mere</a>
+          </div>
+        </div>
+    </div>
+</section>
+
+
 
   <!--Personaleliste-->
     <h2 class="subheadname">Personaleliste</h2>
     <section>
       <ul id="workers"></ul>
+      <div id="showworkers"></div>
     </section>
 
 </section> <!--wrap indhold slut - bruges så det hele kan stå i midten-->

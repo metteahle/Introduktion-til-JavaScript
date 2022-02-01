@@ -9,14 +9,15 @@
 
 
 
+
 //Vis of fjern menukort knapper!
   //knap med billede
   function showImage(){
     let kode = `
       <aside class="menuimage">
-        <h1>Dagens Menu</h1>
-        <img src="images/menukort.png" alt="menu">
-        <figcaption>Her ser du dagens menu</figcaption>
+        <h1>Vores drinks</h1>
+        <img src="images/drinkmenu.png" alt="menu">
+        <figcaption>Her ser du vores udvalg af drinks</figcaption>
       </aside>
     `;
 
@@ -67,6 +68,31 @@ let namelist, workerslist = [
 
     workers.innerHTML += '<li>' + workerslist[ namelist ] + '</li>';
   }
+
+//Jeg forsøgte med mouseevent med personalelisten, den gad dog ikke rigtigt
+  /*let t = document.getElementById('workers'); //let t = t for test
+
+    function workerslist(){ //her defineres funktionen
+      showworkers.innerHTML = `
+      <nav>
+        <ul>
+          <li>Martin Lundgreen - Kok</li>
+          <li>Karoline Helt Hansen - Tjener</li>
+          <li>Anna Greve Lauridsen - Tjener</li>
+          <li>Erik Eriksen - Opvasker</li>
+          <li>Preben Ludvigsen - Kok</li>
+          <li>Alice Jensen - Ejer</li>
+          <li>Henrik Larsen - Opvasker</li>
+          <li>Ulla Killerich Mortensen - Tjener</li>
+          <li>Ivar Nikolajsen - Tjener</li>
+        </ul>
+      </nav>
+      `
+
+      workers.style.display = 'none';
+    }
+
+  t.addEventListener('click', workerslist);*/
 
 
 //Kontaktinformation i Footer start
