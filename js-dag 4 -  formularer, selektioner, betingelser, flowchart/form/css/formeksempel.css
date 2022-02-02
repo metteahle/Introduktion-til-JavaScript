@@ -1,0 +1,15 @@
+#radio,
+#tjek,
+#lastField {
+  display: none;
+}
+
+
+.alleKnapperne{
+  width: 100px;
+  height: 20px;
+  background-color: lightgreen;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 3px 3px #888888;
+}
