@@ -1,0 +1,93 @@
+.backgroundtable{
+  width: 100%;
+  background-image: url(images/restaurant.png);
+  margin-top: 2%;
+  opacity: 30%;
+  z-index: -1;
+}
+
+.dropdown-content{
+  z-index: 1;
+}
+
+.formular{
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+}
+
+.headlineinform{
+  font-weight: bold;
+}
+
+.formulardiv{
+  margin-top: -65%;
+  position: relative;
+  font-size: 40px;
+}
+
+#radio,
+#tjek,
+#lastField {
+  display: none;
+}
+
+
+.alleKnapperne{
+  width: 100px;
+  height: 60px;
+  background-color: lightgreen;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 3px 3px #888888;
+}
+
+.alleKnapperne:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+/*Mediarules*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+.backgroundtable{
+  margin-top: 5%;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+.backgroundtable{
+  margin-top: 5%;
+}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+.backgroundtable{
+  margin-top: 5%;
+}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+.backgroundtable{
+  margin-top: 2%;
+}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

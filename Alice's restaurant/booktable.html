@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Book Bord</title>
+
+  <link rel="stylesheet" href="css/aliceindex.css">
+  <link rel="stylesheet" href="css/booktable.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png"/>
+</head>
+<body>
+
+  <header class="headwidth">
+
+    <a href="index.html">
+      <img id="logomouseevent" class="logo" src="images/logo.png" alt="logo">
+    </a>
+
+     <!--Navbar-->
+     <div class="dropdown">
+       <img src="images/burger.png" alt="burger" id="burger" class="dropbtn">
+       <div id="myDropdown" class="dropdown-content">
+         <a href="#">Menukort</a>
+         <a href="#">Selskaber</a>
+         <a href="#">Om os</a>
+         <a href="#">Kontakt</a>
+         <a id="booktable" href="#">Book Bord</a>
+       </div>
+     </div>
+  </header>
+
+
+<img class="backgroundtable" src="images/restaurant.png" alt="restaurant">
+
+<div class="formulardiv backgroundcolorformular">
+<h1>Book Bord</h1>
+
+  <form action="action2.html" class="formular" id="contact">
+    <fieldset id="navn">
+      <legend class="headlineinform">Indtast navn og email</legend>
+      Navn: <input type="text" name="Name" value="" required> <br>
+      Email: <input type="text" name="Email" value="" required>
+        <br>
+        <br>
+          <div id="btn1" class="alleKnapperne">Næste</div>
+    </fieldset>
+
+      <fieldset id="radio">
+        <legend class="headlineinform">Vælg antal personer</legend>
+        <!--radio buttons-->
+        <input type="radio" id="number1" name="fav_language" value="HTML">
+          <label for="number1">2 pers</label><br>
+        <input type="radio" id="number2" name="fav_language" value="CSS">
+          <label for="number2">4 pers</label><br>
+        <input type="radio" id="number3" name="fav_language" value="JavaScript">
+          <label for="number3">6 pers eller flere</label>
+            <br>
+            <br>
+              <div id="btn2" class="alleKnapperne">Næste</div>
+      </fieldset>
+
+      <fieldset id="tjek">
+        <legend class="headlineinform">Tilvalgsydelser/ andledning</legend>
+        <!--checkbox-->
+        <input type="checkbox" id="flag" name="vehicle1" value="Bike">
+          <label for="flag">Fødselsdags flag</label><br>
+        <input type="checkbox" id="babychair" name="vehicle2" value="Car">
+          <label for="babychair">Barnestol</label><br>
+        <input type="checkbox" id="datenight" name="vehicle3" value="Boat">
+          <label for="datenight">Romantisk middag</label>
+            <br>
+            <br>
+              <div id="btn3" class="alleKnapperne">Næste</div>
+      </fieldset>
+
+        <fieldset id="lastField"> <!--Svarer lidt til en section-->
+          <legend class="headlineinform">Tak for din reservation. Du modtager en bekræftigelse på e-mail</legend>
+          <input type="submit" value="Send" class="alleKnapperne">
+        </fieldset>
+  </form>
+</div>
+
+
+
+<script src="js/index.js"></script>
+<script src="js/booktable.js"></script>
+
+
+</body>
+</html>

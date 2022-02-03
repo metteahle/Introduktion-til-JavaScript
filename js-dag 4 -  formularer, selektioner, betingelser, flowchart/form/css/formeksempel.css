@@ -1,6 +1,8 @@
 #radio,
 #tjek,
-#lastField {
+#lastField
+#chooseday
+#choosetime{
   display: none;
 }
 

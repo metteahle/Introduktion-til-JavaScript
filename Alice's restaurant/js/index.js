@@ -1,12 +1,13 @@
+
+/* Selvstudiedag 2 punkt 4*/
 //menubar
-  // Get the button, and when the user clicks on it, execute myFunction
+  //Når brugeren klikker på knappen udfører den myFunction
   document.getElementById("burger").onclick = function() {myFunction()};
 
-  /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+  /* myFunction kører mellem at tilføje og fjerne show class, som bruges til at skjule og vise dropdown contentet*/
   function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
-
 
 
 
@@ -30,6 +31,7 @@
   document.getElementById('imageMenuOfTheDay').innerHTML = '';
   }
 
+/* Selvstudiedag 1 spørgsmål 4*/
 //Dagens citat
   let quote = [
     '"Den letteste dag under en slankekur er den tredje dag, for da har man nemlig allerede opgivet den."',
@@ -48,7 +50,69 @@
 
     quoteOfTheDay.innerHTML = quote;
 
+/*Selvstudiedag 4*/
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/player_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+    // Replace the 'ytplayer' element with an <iframe> and
+    // YouTube player after the API code downloads.
+    var player;
+
+    function onYouTubePlayerAPIReady() {
+      player = new YT.Player('ytplayer', {
+        height: '360',
+        width: '640',
+        videoId: 'TEWm8gtpvk0',
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      })
+    }
+
+    /* Player kontrolleres af funktioner */
+    function onPlayerReady(event) {
+      console.log("player is ready");
+      event.target.pauseVideo();
+    }
+
+    function playItSam(event) {
+      console.log("player is ready");
+      event.target.playVideo(); // event from player
+    }
+
+    function onPlayerStateChange() {
+      console.log("player state change");
+
+      if (event.data == YT.PlayerState.PLAYING && !done) {
+        //setTimeout(stopVideo, 6000);
+        done = true;
+      }
+    }
+
+    /* is element visible? if ok playVideo() */
+    var elementet = document.getElementById("synlig");
+
+    window.addEventListener("scroll", function() {
+
+      if (elFllVsbl(elementet)) {
+        console.log("play video");
+        player.playVideo(); // with player you can manipulate the video
+      } else {
+        console.log("pause video")
+        player.pauseVideo();
+      }
+    }); // end eventlistener
+
+    function elFllVsbl(el) {
+      return (el.getBoundingClientRect().top >= 0 && el.getBoundingClientRect().bottom < window.innerHeight);
+    }
+
+
+
+/* Selvstudiedag 1 spørgsmål 3*/
 //Personaleliste
 let namelist, workerslist = [
   'Martin Lundgreen - Kok',
@@ -69,34 +133,8 @@ let namelist, workerslist = [
     workers.innerHTML += '<li>' + workerslist[ namelist ] + '</li>';
   }
 
-//Jeg forsøgte med mouseevent med personalelisten, den gad dog ikke rigtigt
-  /*let t = document.getElementById('workers'); //let t = t for test
-
-    function workerslist(){ //her defineres funktionen
-      showworkers.innerHTML = `
-      <nav>
-        <ul>
-          <li>Martin Lundgreen - Kok</li>
-          <li>Karoline Helt Hansen - Tjener</li>
-          <li>Anna Greve Lauridsen - Tjener</li>
-          <li>Erik Eriksen - Opvasker</li>
-          <li>Preben Ludvigsen - Kok</li>
-          <li>Alice Jensen - Ejer</li>
-          <li>Henrik Larsen - Opvasker</li>
-          <li>Ulla Killerich Mortensen - Tjener</li>
-          <li>Ivar Nikolajsen - Tjener</li>
-        </ul>
-      </nav>
-      `
-
-      workers.style.display = 'none';
-    }
-
-  t.addEventListener('click', workerslist);*/
-
-
+/* Selvstudiedag 1 spørgsmål 2*/
 //Kontaktinformation i Footer start
-
 let contact = {
   name: 'Alices Restaurant',
   adress: 'Volden 32, 8000 Århus',
@@ -109,6 +147,8 @@ let contact = {
 //Kontaktinformation i footer slut
 
 
+
+/* Selvstudiedag 1 spørgsmål 1  herfra og nedefter*/
     //Dag
 const d = new Date();
 const day = [
