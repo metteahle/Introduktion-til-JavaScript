@@ -72,6 +72,18 @@ a:visited{
   margin-top: 5%;
 }
 
+h1{
+  font-size: 30px;
+}
+
+.formulardiv{
+  font-size: 20px;
+}
+
+.alleKnapperne{
+  height: 30px;
+}
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -81,6 +93,19 @@ a:visited{
   margin-top: 5%;
 }
 
+
+h1{
+  font-size: 30px;
+}
+
+.formulardiv{
+  font-size: 20px;
+}
+
+.alleKnapperne{
+  height: 30px;
+}
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -88,6 +113,18 @@ a:visited{
 
 .backgroundtable{
   margin-top: 5%;
+}
+
+h1{
+  font-size: 40px;
+}
+
+.formulardiv{
+  font-size: 30px;
+}
+
+.alleKnapperne{
+  height: 50px;
 }
 
 }

@@ -31,7 +31,7 @@ btn5.addEventListener('click', function(){
 function validateForm() {
 let x = document.forms["myForm"]["fname"].value;
 if (x == "") {
-  alert("Name must be filled out");
+  alert("Navn skal udfyldes");
   return false;
 }
 }
