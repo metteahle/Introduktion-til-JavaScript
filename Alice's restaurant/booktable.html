@@ -37,49 +37,93 @@
 <div class="formulardiv backgroundcolorformular">
 <h1>Book Bord</h1>
 
-  <form action="action2.html" class="formular" id="contact">
-    <fieldset id="navn">
-      <legend class="headlineinform">Indtast navn og email</legend>
-      Navn: <input type="text" name="Name" value="" required> <br>
-      Email: <input type="text" name="Email" value="" required>
-        <br>
-        <br>
-          <div id="btn1" class="alleKnapperne">Næste</div>
+<form name="myForm" onsubmit="return validateForm()" method="post">
+  <fieldset id="navn">
+    <legend>Indtast navn og email</legend>
+    Navn: <input type="text" name="fname" value=""> <br>
+    Email: <input type="text" name="Email" value="">
+      <br>
+      <br>
+      <input type="submit" value="Næste" id="btn1" class="alleKnapperne">
+  </fieldset>
+
+    <fieldset id="radio">
+      <legend class="headlineinform">Vælg antal personer</legend>
+      <!--radio buttons-->
+      <input type="radio" id="2pers" name="fav_language" value="HTML">
+        <label for=2pers>2 pers</label><br>
+      <input type="radio" id="4pers" name="fav_language" value="CSS">
+        <label for="4pers">4 pers</label><br>
+      <input type="radio" id="6pers" name="fav_language" value="JavaScript">
+        <label for="6pers">6 pers eller flere</label>
+          <br>
+          <br>
+            <div id="btn2" class="alleKnapperne">Næste</div>
+        </fieldset>
+
+
+        <fieldset id="chooseday">
+          <legend class="headlineinform">Vælg dag</legend>
+          <!--radio buttons-->
+          <input type="radio" id="monday" name="fav_language" value="weekday">
+            <label for="monday">Mandag</label><br>
+          <input type="radio" id="thuesday" name="fav_language" value="weekday">
+            <label for="thuesday">Tirsdag</label><br>
+          <input type="radio" id="wednesday" name="fav_language" value="weekday">
+            <label for="wednesday">Onsdag</label><br>
+          <input type="radio" id="thursday" name="fav_language" value="weekday">
+            <label for="thursday">Torsdag</label><br>
+          <input type="radio" id="friday" name="fav_language" value="weekday">
+            <label for="friday">Fredag</label><br>
+          <input type="radio" id="saturday" name="fav_language" value="weekday">
+            <label for="saturday">Lørdag</label><br>
+          <input type="radio" id="sunday" name="fav_language" value="weekday">
+            <label for="sunday">Søndag</label>
+              <br>
+              <br>
+                <div id="btn3" class="alleKnapperne">Næste</div>
+        </fieldset>
+
+        <fieldset id="choosetime">
+          <legend class="headlineinform">Vælg tidspunkt</legend>
+          <!--radio buttons-->
+          <input type="radio" id="time1" name="fav_language" value="time">
+            <label for="time1">17:00</label><br>
+          <input type="radio" id="time2" name="fav_language" value="time">
+            <label for="time2">17:30</label><br>
+          <input type="radio" id="time3" name="fav_language" value="time">
+            <label for="time3">18:00</label><br>
+          <input type="radio" id="time4" name="fav_language" value="time">
+            <label for="time4">18:30</label><br>
+          <input type="radio" id="time5" name="fav_language" value="time">
+            <label for="time5">19:00</label><br>
+              <br>
+              <br>
+                <div id="btn4" class="alleKnapperne">Næste</div>
+        </fieldset>
+
+    <fieldset id="tjek">
+      <legend class="headlineinform">Tilvalgsydelser/ anledning</legend>
+      <!--checkbox-->
+      <input type="checkbox" id="flag" name="vehicle1" value="Bike">
+        <label for="flag">Fødselsdags flag</label><br>
+      <input type="checkbox" id="childchair" name="vehicle2" value="Car">
+        <label for="childchair"> Barnestol</label><br>
+      <input type="checkbox" id="datenight" name="vehicle3" value="Boat">
+        <label for="datenight">Romantisk middag</label>
+          <br>
+          <br>
+            <div id="btn5" class="alleKnapperne">Næste</div>
     </fieldset>
 
-      <fieldset id="radio">
-        <legend class="headlineinform">Vælg antal personer</legend>
-        <!--radio buttons-->
-        <input type="radio" id="number1" name="fav_language" value="HTML">
-          <label for="number1">2 pers</label><br>
-        <input type="radio" id="number2" name="fav_language" value="CSS">
-          <label for="number2">4 pers</label><br>
-        <input type="radio" id="number3" name="fav_language" value="JavaScript">
-          <label for="number3">6 pers eller flere</label>
-            <br>
-            <br>
-              <div id="btn2" class="alleKnapperne">Næste</div>
-      </fieldset>
+    <fieldset id="lastField"> <!--Svarer lidt til en section-->
+      <legend>Tak for dit svar</legend>
+      <div class="thankyoulink alleKnapperne">
+        <a href="action.html">Send</a>
+      </div>
+    </fieldset>
+</form>
 
-      <fieldset id="tjek">
-        <legend class="headlineinform">Tilvalgsydelser/ andledning</legend>
-        <!--checkbox-->
-        <input type="checkbox" id="flag" name="vehicle1" value="Bike">
-          <label for="flag">Fødselsdags flag</label><br>
-        <input type="checkbox" id="babychair" name="vehicle2" value="Car">
-          <label for="babychair">Barnestol</label><br>
-        <input type="checkbox" id="datenight" name="vehicle3" value="Boat">
-          <label for="datenight">Romantisk middag</label>
-            <br>
-            <br>
-              <div id="btn3" class="alleKnapperne">Næste</div>
-      </fieldset>
-
-        <fieldset id="lastField"> <!--Svarer lidt til en section-->
-          <legend class="headlineinform">Tak for din reservation. Du modtager en bekræftigelse på e-mail</legend>
-          <input type="submit" value="Send" class="alleKnapperne">
-        </fieldset>
-  </form>
 </div>
 
 

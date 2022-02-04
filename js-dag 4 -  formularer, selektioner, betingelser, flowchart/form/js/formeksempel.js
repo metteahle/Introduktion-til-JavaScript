@@ -24,3 +24,12 @@ btn5.addEventListener('click', function(){
   tjek.style.display = 'none';
   lastField.style.display = 'block';
 })
+
+
+  function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}

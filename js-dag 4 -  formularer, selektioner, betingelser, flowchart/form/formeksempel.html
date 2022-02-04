@@ -12,14 +12,14 @@
 
 <h1>Form eksempel</h1>
 
-  <form action="action.html">
+  <form action="action.html" name="myForm" onsubmit="return validateForm()" method="post">
     <fieldset id="navn">
       <legend>Indtast navn og email</legend>
-      Navn: <input type="text" name="Name" value=""> <br>
-      Email: <input type="text" name="Name" value="">
+      Navn: <input type="text" name="fname" value=""> <br>
+      Email: <input type="text" name="Email" value="">
         <br>
         <br>
-          <div id="btn1" class="alleKnapperne">Næste</div>
+        <input type="submit" value="Næste" id="btn1" class="alleKnapperne">
     </fieldset>
 
       <fieldset id="radio">
@@ -93,7 +93,9 @@
 
         <fieldset id="lastField"> <!--Svarer lidt til en section-->
           <legend>Tak for dit svar</legend>
-          <input type="submit" value="submit">
+          <div class="thankyoulink alleKnapperne">
+            <a href="action.html">Send</a>
+          </div>
         </fieldset>
   </form>
 
