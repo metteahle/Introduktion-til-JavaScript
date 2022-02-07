@@ -135,7 +135,7 @@ let namelist, workerslist = [
 
 /* Selvstudiedag 1 spørgsmål 2*/
 //Kontaktinformation i Footer start
-let contact = {
+/*let contact = {
   name: 'Alices Restaurant',
   adress: 'Volden 32, 8000 Århus',
   phonenumber: 25423670,
@@ -150,7 +150,7 @@ let contact = {
 
 /* Selvstudiedag 1 spørgsmål 1  herfra og nedefter*/
     //Dag
-const d = new Date();
+/*const d = new Date();
 const day = [
   'Søndag',
   'Mandag',
@@ -201,4 +201,4 @@ const now = new Date()
       if(hour > 17) {greeting = 'God aften!'}
       console.log(greeting)
       //Men hvordan får jeg tiden ind på siden så den vises?
-      document.getElementById("whattime").innerHTML = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+      document.getElementById("whattime").innerHTML = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();*/

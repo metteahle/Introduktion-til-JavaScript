@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Json eksempel 1</title>
+
+<style>
+
+  img{
+    width: 300px;
+  }
+
+</style>
+
+</head>
+<body>
+
+  <h1>Vores Menu</h1>
+  <div id="resultat"></div>
+
+  <script>
+    let hermes = '{"name":"Hermes", "age":30, "car":null}' //her er det en streng
+    //console.log(hermes)
+    const obj = JSON.parse(hermes); //her bliver det lavet om til et objekt
+    console.log(obj)
+        console.log( "Her er navnet: " +  obj.name )
+
+    const myObj = {name:"John", age:30, city:"New York"};
+    document.getElementById("resultat").innerHTML = myObj.age;
+    console.log(myObj)
+
+    //nu skal vi bruge vores Json
+    menu = `{
+      "Menu": [
+        {
+          "id": 1,
+          "titel": "Onionrings",
+          "beskrivelse": "Friterede løg",
+          "pris": 30,
+          "ret": "forret",
+          "foto": "onionrings.png"
+        },
+        {
+          "id": 2,
+          "titel": "Græskarsuppe",
+          "beskrivelse": "lækker græskarsuppe med hjemmelavede brødcrutoner",
+          "pris": 45,
+          "ret": "forret",
+          "foto": "suppe.png"
+        },
+        {
+          "id": 3,
+          "titel": "Lasange",
+          "beskrivelse": "lækker cremet lasange topppet med ost",
+          "pris": 70,
+          "ret": "hovedret",
+          "foto": "lasagne.png"
+        },
+        {
+          "id": 4,
+          "titel": "Stegt flæsk",
+          "beskrivelse": "Dansk stegt flæsk med kartofler og persillesovs",
+          "pris": 119,
+          "ret": "hovedret",
+          "foto": "meat.png"
+        },
+        {
+          "id": 5,
+          "titel": "Citrontærte",
+          "beskrivelse": "Smagen af sommer der kombinerer det sure med det søde! Den perfekte dessert",
+          "pris": 35,
+          "ret": "dessert",
+          "foto": "citrontart.png"
+        },
+        {
+          "id": 6,
+          "titel": "Sorbet is",
+          "beskrivelse": "Lækket udvalg af sorbet is! ",
+          "pris": 35,
+          "ret": "dessert",
+          "foto": "sorbet.png"
+        },
+        {
+          "id": 7,
+          "titel": "Whiskysovs",
+          "beskrivelse": "Hjemmelavet whiskysovs evt. som tilbehør til stegt flæsk",
+          "pris": 25,
+          "ret": "tilbehør",
+          "foto": "whiskey.png"
+        }
+      ]
+    }
+`;
+
+  const xxx = JSON.parse(menu);
+  console.log(xxx.Menu[0].titel)
+
+  //loop der henter hele arrayet
+  for (let i=0; i<xxx.Menu.length; i++){
+    console.log( xxx.Menu[i].titel)
+    resultat.innerHTML += `
+      <div class="menuTing">
+        <h2> ${xxx.Menu[i].titel} </h2>
+        <p> ${xxx.Menu[i].beskrivelse} </p>
+            <img src="images/${xxx.Menu[i].foto}" alt="${xxx.Menu[i].titel}">
+        <p> ${xxx.Menu[i].pris} kroner </p>
+      </div>
+    `
+  }
+
+
+
+  </script>
+
+</body>
+</html>

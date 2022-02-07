@@ -1,0 +1,60 @@
+{
+  "Menu": [
+    {
+      "id": 1,
+      "titel": "Onionrings",
+      "beskrivelse": "Friterede løg",
+      "pris": 30,
+      "ret": "forret",
+      "foto": "løg.png"
+    },
+    {
+      "id": 2,
+      "titel": "Græskarsuppe",
+      "beskrivelse": "lækker græskarsuppe med hjemmelavede brødcrutoner",
+      "pris": 45,
+      "ret": "forret",
+      "foto": "suppe.png"
+    },
+    {
+      "id": 3,
+      "titel": "Lasange",
+      "beskrivelse": "lækker cremet lasange topppet med ost",
+      "pris": 70,
+      "ret": "hovedret",
+      "foto": "lasange.png"
+    },
+    {
+      "id": 4,
+      "titel": "Stegt flæsk",
+      "beskrivelse": "Dansk stegt flæsk med kartofler og persillesovs",
+      "pris": 119,
+      "ret": "hovedret",
+      "foto": "flæsk.png"
+    },
+    {
+      "id": 5,
+      "titel": "Citrontærte",
+      "beskrivelse": "Smagen af sommer der kombinerer det sure med det søde! Den perfekte dessert",
+      "pris": 35,
+      "ret": "dessert",
+      "foto": "citron.png"
+    },
+    {
+      "id": 6,
+      "titel": "Sorbet is",
+      "beskrivelse": "Lækket udvalg af sorbet is! ",
+      "pris": 35,
+      "ret": "dessert",
+      "foto": "sorbet.png"
+    },
+    {
+      "id": 7,
+      "titel": "Whiskysovs",
+      "beskrivelse": "Hjemmelavet whiskysovs evt. som tilbehør til stegt flæsk",
+      "pris": 25,
+      "ret": "tilbehør",
+      "foto": "sovs.png"
+    }
+  ]
+}
