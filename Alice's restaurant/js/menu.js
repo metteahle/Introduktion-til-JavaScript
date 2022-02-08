@@ -6,7 +6,7 @@ menu = `{
     {
       "id": 1,
       "titel": "Onionrings",
-      "beskrivelse": "Friterede løg",
+      "beskrivelse": "Friterede lækre og sprøde onionrings",
       "pris": 30,
       "ret": "forret",
       "foto": "onionrings.png"
@@ -14,7 +14,7 @@ menu = `{
     {
       "id": 2,
       "titel": "Græskarsuppe",
-      "beskrivelse": "lækker græskarsuppe med hjemmelavede brødcrutoner",
+      "beskrivelse": "Lækker cremet græskarsuppe med hjemmelavede brødcrutoner",
       "pris": 45,
       "ret": "forret",
       "foto": "suppe.png"
@@ -38,7 +38,7 @@ menu = `{
     {
       "id": 5,
       "titel": "Citrontærte",
-      "beskrivelse": "Smagen af sommer der kombinerer det sure med det søde! Den perfekte dessert",
+      "beskrivelse": "Smagen af sommer der kombinerer det sure med det søde! Serveres med et kugle hjemmlavet vanilieis",
       "pris": 35,
       "ret": "dessert",
       "foto": "citrontart.png"
@@ -46,7 +46,7 @@ menu = `{
     {
       "id": 6,
       "titel": "Sorbet is",
-      "beskrivelse": "Lækket udvalg af sorbet is! ",
+      "beskrivelse": "Lækket udvalg af is! Vælg mellem jordbær sorbet, citron sorbet og hasselnød",
       "pris": 35,
       "ret": "dessert",
       "foto": "sorbet.png"

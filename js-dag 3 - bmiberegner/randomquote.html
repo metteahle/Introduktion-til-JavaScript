@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+
+<script>
+/*
+    Math.random() returns a number between 0 and 1 excluding 1 itself.
+    That together with floor function returns a number between 0 and
+    max-1 (here max = sentence.length) and fits the zero-based numbering
+    of the elements in the array
+*/
+function getRandomSentence () {
+    var index= Math.floor(Math.random() * (sentences.length));
+    return sentences[index];
+}
+
+var sentences= [
+    'so fat not even Dora can explore her',
+    'so  fat I swerved to miss her and ran out of gas',
+    'so smelly she put on Right Guard and it went left',
+    'so fat she hasn’t got cellulite, she’s got celluheavy',
+    'so fat she don’t need no internet – she’s already world wide',
+    'so hair her armpits look like Don King in a headlock',
+    'so classless she could be a Marxist utopia',
+    'so fat she can hear bacon cooking in Canada',
+    'so fat she won “The Bachelor” because she all those other bitches',
+    'so stupid she believes everything that Brian Williams says',
+    'so ugly she scared off Flavor Flav',
+    'is like Domino’s Pizza, one call does it all',
+    'is twice the man you are',
+    'is like Bazooka Joe, 5 cents a blow',
+    'is like an ATM, open 24/7',
+    'is like a championship ring, everybody puts a finger in her'
+];
+
+function scribble(){
+  // get the canvas element you want to write to
+  var canvas = document.getElementById("woodcut");
+  // get a handle for the above canvas (here 2d only for simple text)
+  var context = canvas.getContext("2d");
+  // the canvas is blank the first time only, so erase the content
+  // even if it is already blank, checking for it would be more
+  // complicated and slower, too
+  context.clearRect(0, 0, canvas.width, canvas.height);
+  // choose a font (you can choose the size also as you can see)
+  context.font = "30px Arial";
+  // the letters are filled and they are filled in red
+  context.fillStyle = "red";
+  // center the text horizontally
+  context.textAlign = "center";
+  // put a random line in the middle of the canvas
+  // the +10 account for the fonttype's height
+  context.fillText(getRandomSentence(),0, canvas.height/2 + 10);
+}
+</script>
+
+An indifferent opinion<br>
+<canvas id="woodcut" width="1000" height="100"
+style="border:10px solid #665599;">
+This text shows up if the canvas element is  not supported
+</canvas>
+<br>
+<button onclick="scribble()">scribble</button>
+
+
+</body>
+</html>

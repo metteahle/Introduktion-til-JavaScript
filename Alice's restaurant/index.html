@@ -36,7 +36,7 @@
 <section class="wrapcenter"> <!--wrap indhold start-->
   <h1 class="headername">Alices Restaurant</h1>
 
-<!--Knap der folder menukort ud-->
+<!--Knap der folder drinkskort ud-->
 <div class="menuoftheday">
   <button class="menuofthedaybutton"
       type="button"
@@ -54,7 +54,13 @@
   <br>
   <br>
 <!--Dagens citat - random-->
-  <div id="quoteOfTheDay"></div>
+<div class="qouteOfTheDay">
+    <canvas id="woodcut" class="quoterandom" width="1000" height="100">
+    This text shows up if the canvas element is  not supported
+    </canvas>
+    <br>
+    <button onclick="scribble()" class="menuofthedaybutton">Klik her for dagens citat</button>
+</div>
 
   <br>
   <br>
@@ -67,7 +73,7 @@
         <div>
           <h2>Lokale friske råvarer</h2>
           <p>Hos Alice bruger vi lokale friske råvarer, vi går ind for økologi og SU venlige priser.</p>
-          <a href="#">Læs mere</a>
+          <a href="#" class="menuofthedaybutton">Læs mere</a>
         </div>
       </div>
   </div>
@@ -77,7 +83,7 @@
       <div class="flex-item">
         <h2>Vores lækre salater</h2>
         <p>Hos Alice bruger vi lokale friske råvarer, vi går ind for økologi og SU venlige priser.</p>
-        <a href="#">Læs mere</a>
+        <a href="#" class="menuofthedaybutton">Læs mere</a>
       </div>
     </div>
     <img class="flex-item" src="images/salat.png" alt="salat">
@@ -89,7 +95,7 @@
           <div>
             <h2>Besøg vores restaurent</h2>
             <p>Hos Alice bruger vi lokale friske råvarer, vi går ind for økologi og SU venlige priser.</p>
-            <a href="#">Læs mere</a>
+            <a href="#" class="menuofthedaybutton">Læs mere</a>
           </div>
         </div>
     </div>

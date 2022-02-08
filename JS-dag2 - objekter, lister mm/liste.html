@@ -25,6 +25,8 @@
     <div id="idag"></div>
   </section>
 
+    <div id="quoteOfTheDay"></div>
+
 <!--Rejsedestinationer script-->
   <script>
     let visMig, destinationer = [
@@ -85,6 +87,27 @@
     idag.innerHTML = uge[ d.getDay() ];
 
 
+    //Dagens citat
+    let quote = [
+   '"Den letteste dag under en slankekur er den tredje dag, for da har man nemlig allerede opgivet den."',
+   '"Der findes ingen sandere kærlighed end kærlighed til mad."',
+   '"Det første man taber under en slankekur er det gode humør."',
+   '"Der er altid plads til dessert!"',
+   '"Man skal nyde før man kan yde!"'
+ ]
+
+ //et tilfældigt tal
+   function tilfaeldig(){
+     return qoute [
+       Math.floor(Math.random() * quote.length)
+     ];
+   }
+
+   quoteOfTheDay.innerHTML = quote;
+
+      /*  buttonquote.addEventListener('click', function(){
+          quoteOfTheDay.innerHTML = quote[ Math.floor(Math.random() * quotes.length)]
+        })*/
 
   </script>
 

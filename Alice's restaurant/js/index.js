@@ -32,23 +32,29 @@
   }
 
 /* Selvstudiedag 1 spørgsmål 4*/
-//Dagens citat
-  let quote = [
-    '"Den letteste dag under en slankekur er den tredje dag, for da har man nemlig allerede opgivet den."',
-    '"Der findes ingen sandere kærlighed end kærlighed til mad."',
-    '"Det første man taber under en slankekur er det gode humør."',
-    '"Der er altid plads til dessert!"',
-    '"Man skal nyde før man kan yde!"'
-  ]
 
-  //et tilfældigt tal
-    function tilfaeldig(){
-      return qoute [
-        Math.floor(Math.random() * quote.length)
-      ];
+
+    function getRandomSentence () {
+        var index= Math.floor(Math.random() * (sentences.length));
+        return sentences[index];
     }
 
-    quoteOfTheDay.innerHTML = quote;
+    var sentences= [
+      '"Den letteste dag under en slankekur er den tredje dag, for da har man nemlig allerede opgivet den."',
+      '"Der findes ingen sandere kærlighed end kærlighed til mad."',
+      '"Det første man taber under en slankekur er det gode humør."',
+      '"Der er altid plads til dessert!"',
+      '"Man skal nyde før man kan yde!"'
+    ];
+
+    function scribble(){
+      var canvas = document.getElementById("woodcut");
+      var context = canvas.getContext("2d");
+      context.font = "20px Oswald";
+      context.clearRect(0, 0, canvas.width, canvas.height);
+      context.fillText(getRandomSentence(),0, canvas.height/2 + 10);
+    }
+
 
 /*Selvstudiedag 4*/
     var tag = document.createElement('script');
@@ -114,7 +120,7 @@
 
 /* Selvstudiedag 1 spørgsmål 3*/
 //Personaleliste
-let namelist, workerslist = [
+  let namelist, workerslist = [
   'Martin Lundgreen - Kok',
   'Karoline Helt Hansen - Tjener',
   'Anna Greve Lauridsen - Tjener',
@@ -133,7 +139,10 @@ let namelist, workerslist = [
     workers.innerHTML += '<li>' + workerslist[ namelist ] + '</li>';
   }
 
-/* Selvstudiedag 1 spørgsmål 2*/
+    namelist.addEventListener('click', workerslist);
+
+
+/* Selvstudiedag 1 spørgsmål 2 - findes under footerelement.js*/
 //Kontaktinformation i Footer start
 /*let contact = {
   name: 'Alices Restaurant',

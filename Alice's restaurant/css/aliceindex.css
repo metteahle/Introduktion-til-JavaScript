@@ -114,6 +114,15 @@ h2{
   font-size: 14px;
 }
 
+.menuofthedaybutton:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.qouteOfTheDay{
+  text-align: center;
+}
+
+
 .subheadname{
   margin-left: 40px;
 }
@@ -188,6 +197,11 @@ h2{
 
 .articles img{
   width: 100%;
+}
+
+canvas{
+  width: 700px;
+  margin-left: 2%;
 }
 
 }
